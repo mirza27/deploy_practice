@@ -62,7 +62,7 @@ func main()  {
 	router.PUT("/persons/:id", controllers.UpdatePerson)
 	router.DELETE("/persons/:id", controllers.DeletePerson)
 
-	router.Run(":"+os.Getenv("PGPORT"))
+	router.Run(":"+os.Getenv("PORT"))
 
 }
 
